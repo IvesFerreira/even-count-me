@@ -1,0 +1,29 @@
+$primary-color: #5271ff;
+$secondary-color: #e8e8f2;
+$neutra-color: #161c23;
+$bg-color: #ffffff;
+
+@mixin resetDefault {
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    &::before, &::after {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
